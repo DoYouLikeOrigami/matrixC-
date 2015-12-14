@@ -27,8 +27,8 @@ public:
         }
     }
 
-    const Element operator[](const int& i) const {
-        if (i >= 0 && i < col.size()) return col[i];
+    const double operator[](const int& i) const {
+        if (i >= 0 && i < col.size()) return col[i].getVal();
         else cout << "No such Col" << endl;
     }
 };
